@@ -1,0 +1,52 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+
+<div class="row">
+    <form class="col s12" id="reviewform">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Title" id="title" type="text" class="validate">
+                <label for="title">Title</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="author" type="text" class="validate">
+                <label for="author">Author</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+            <input id="date_read" type="text" class="validate">
+            <label for="date_read">Date Read</label>
+            </div>
+        </div>
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>What genre is it?</option>
+                <option value="1">Contemporary</option>
+                <option value="2">Crime</option>
+                <option value="3">Fantasy</option>
+                <option value="4">Historical</option>
+                <option value="5">Horror</option>
+                <option value="6">Romance</option>
+                <option value="7">Science Fiction</option>
+                <option value="8">Thriller</option>
+            </select>
+            <label>Genre</label>
+        </div>
+        <div class="row">
+            <div class="col s12">
+            Write your review here:
+                <div class="input-field inline">
+                    <textarea id="book_review" type="text" class="materialize-textarea"></textarea>
+                    <label for="book_review">Review</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">Write your review here</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        
+
+{% endblock %}
