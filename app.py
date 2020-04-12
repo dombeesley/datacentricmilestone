@@ -1,7 +1,16 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
+
+
+app.config["MONGO_DBNAME"] = 'data_centric_books'
+app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@myfirstcluster-mtbzq.mongodb.net/test?retryWrites=true&w=majority'
+
+
+mongo = PyMongo(app)
+
 
 
 @app.route('/')

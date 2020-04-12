@@ -1,6 +1,6 @@
 body {
     background-color: beige;
-    color: red;
+    color: black;
 }
 
 #reviewform{
@@ -10,4 +10,8 @@ body {
 
 h1 {
     color:black;
+}
+
+#addbutton {
+    margin-left:10px;
 }
