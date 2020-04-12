@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('home')}}">Home</a></li>
+                    <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
+                    <li><a href="{{url_for('library')}}">Library</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{url_for('home')}}">Home</a></li>
+                    <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
+                    <li><a href="{{url_for('library')}}">Library</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
 
     <div class="container">
         {% block content %} {% endblock %}
@@ -18,8 +37,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('select').formSelect();
+        $(document).ready(function() {
+            $('select').material_select();
         });
     </script>
 </body>
