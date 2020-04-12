@@ -6,7 +6,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('base.html')
+    return render_template('home.html')
+
+
+@app.route('/addbook')
+def addbook():
+    return render_template('addbook.html')
+
+
+@app.route('/library')
+def library():
+    return render_template('library.html')
 
 
 if __name__ == '__main__':

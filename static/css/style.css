@@ -1,8 +1,12 @@
 body {
-    background-image: url(https://www.thegoodbook.co.uk/downloads/bookshelf2.jpg);
-    color: black;
+    background-color: beige;
+    color: red;
 }
 
 #reviewform{
     background: white;
+}
+
+h1 {
+    color:black;
 }
