@@ -3,4 +3,28 @@
 {% block content %}
 <h1>THE LIBRARY</h1>
 
+<div class="row">
+    <ul class="collapsible">
+        {% for book in library %}
+        <li>
+            <div class="collapsible-header">
+                <div class="col s12">
+                    <i class="material-icons">expand_more</i>
+                    <strong>{{book.title}}</strong> by <em>{{book.author}}</em>
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <div class="col s3">
+                    <img src="{{book.image}}">
+                </div>
+                <div class="col s9"> 
+                    {{book.book_review}} 
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
+
 {% endblock %}
