@@ -14,21 +14,22 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-            <a href="{{url_for('home')}}" class="brand-logo site_title">The Library</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="{{url_for('home')}}">Home</a></li>
-                <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
-                <li><a href="{{url_for('see_library')}}">Library</a></li>
-            </ul>
-            <ul class="sidenav" id="mobile-demo">
+                <a href="{{url_for('home')}}" class="brand-logo site_title">The Library</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('home')}}">Home</a></li>
+                    <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
+                    <li><a href="{{url_for('see_library')}}">Library</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
             <li><a href="{{url_for('home')}}">Home</a></li>
             <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
             <li><a href="{{url_for('see_library')}}">Library</a></li>
         </ul>
-            </div>
-        </nav>
-
         
           
     </header>
@@ -48,6 +49,7 @@
             $('.collapsible').collapsible();
             $('select').formSelect();
             $('.datepicker').datepicker();
+            $('.sidenav').sidenav();
         });
     </script>
 
