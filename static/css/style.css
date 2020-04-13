@@ -16,11 +16,24 @@ h1 {
     margin-left:10px;
 }
 
-img {
-    width: 100%;
-    height: auto;
+
+
+/* Library Page */
+
+.librarycontainer{
+    text-align: center;
+}
+
+.librarytext{
+    display: inline-block;
 }
 
 .carousel {
     margin-bottom: 25px;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+

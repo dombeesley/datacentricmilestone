@@ -1,56 +1,17 @@
 {% extends 'base.html'%}
 
 {% block content %}
-<h1>THE LIBRARY</h1>
+<div class="librarycontainer">
+    <div class="librarytext">
+        <h1><u>THE LIBRARY</u></h1>
+        <div>To find out more about each book, just click on it, or keep scrolling through until you see one you like.</div>
+    </div>
+</div>
 
 <div class="carousel">
 {% for book in library %}
     <a class="carousel-item" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>
 {% endfor %}
   </div>
-
-
-<!--
-<div class="row">
-    <ul class="collapsible expandable">
-        {% for book in library %}
-        <li>
-            <div class="collapsible-header">
-                <div class="col s9">
-                    <i class="material-icons">expand_more</i>
-                    <strong>{{book.title}}</strong> by <em>{{book.author}}</em>
-                </div>
-                <div>
-                    Review by <em>{{book.username}}</em>
-                </div>
-            </div>
-            <div class="collapsible-body">
-                <div class="cols12">
-                    <div class="col s3">
-                        <div>
-                            <img src="{{book.image}}">
-                        </div>
-                    </div>
-                    <div class="col s9"> 
-                        <div>
-                            {{book.book_review}} 
-                        </div>
-                    </div>
-                </div>
-                <div class="cols12">
-                    <div>
-                        {{book.date_read}}
-                    </div>  
-                </div>
-                <div class="cols12">
-                    <div>
-                        {{book.genre}}
-                    </div>  
-                </div>
-            </div>
-        </li>
-        {% endfor %} 
-    </ul>
-</div> -->
 
 {% endblock %}
