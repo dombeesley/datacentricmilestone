@@ -41,9 +41,22 @@ def view_book(book_id):
     return render_template('viewbook.html', book=the_book)
 
 
-@app.route('/login')
-def login():
+@app.route('/loginpage')
+def loginpage():
     return render_template('login.html')
+
+
+@app.route('/login', methods=['POST', 'GET'])
+def login():
+    users = mongo.db.users
+    login_user = users.find_one({'username': request.form['username']})
+
+    if login_user:
+        if request.form['password'] == login_user['password']:
+            session['username'] = request.form['username']
+            return redirect(url_for('see_library'))
+
+    return render_template('tryagain.html')
 
 
 @app.route('/register', methods=['POST', 'GET'])

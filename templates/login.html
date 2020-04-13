@@ -5,6 +5,30 @@
 <div class="logincontainer">
     <div class="logintext">
         <h1><u>Welcome!</u></h1>
+        <div>
+            Enter your username and password below to log in.
+        </div>
+
+        <div class="row">
+            <form class="col s12 registerform" method="POST" action="{{ url_for('login') }}">
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input id="username" type="text" name="username" class="validate">
+                    <label for="username">Username</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input id="password" type="password" name = "password" class="validate">
+                    <label for="password">Password</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block formbutton">
+                    <i class="material-icons right">beenhere</i>
+                    Log In
+                </button>
+            </form>
+        </div>
 
         <div>
             Don't have an account? <a href="{{ url_for('register') }}">Click here</a> to sign up now.
