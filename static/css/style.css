@@ -3,6 +3,11 @@ body {
     color: black;
 }
 
+.site_title {
+    margin-left:15px;
+}
+
+/* Add Book page */
 #reviewform{
     background: white;
     margin-top: 25px;
@@ -16,10 +21,7 @@ h1 {
     margin-left:10px;
 }
 
-
-
 /* Library Page */
-
 .librarycontainer{
     text-align: center;
 }
@@ -36,4 +38,6 @@ img {
     width: 100%;
     height: auto;
 }
+
+/* View Book page */
 
