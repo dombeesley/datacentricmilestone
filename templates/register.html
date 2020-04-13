@@ -2,23 +2,32 @@
 
 {% block content %}
 
+<h1> Sign Up Here</h1>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <form method=POST action="{{ url_for('register') }}">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Username</label>
-                    <input type="text" class="form-control" name="username" placeholder="Username">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" name="pass" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Register</button>
-            </form>
-            <br>
-        </div>
-    </div>
+<div>
+    To sign up and start adding your books to the library, just fill in your details below, and click register.
 </div>
+
+<div class="row">
+    <form class="col s12 registerform" method="POST" action="{{ url_for('register') }}">
+        <div class="row">
+            <div class="input-field col s12">
+            <input id="username" type="text" name="username" class="validate">
+            <label for="username">Username</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+            <input id="password" type="password" name = "password" class="validate">
+            <label for="password">Password</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block formbutton">
+            <i class="material-icons right">create</i>
+            Sign Up
+        </button>
+    </form>
+  </div>
+
+
 {% endblock %}

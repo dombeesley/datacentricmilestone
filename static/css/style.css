@@ -41,3 +41,14 @@ img {
 
 /* View Book page */
 
+
+/* Register page */
+.registerform{
+    background: white;
+    margin-top: 25px;
+}
+
+.formbutton{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
