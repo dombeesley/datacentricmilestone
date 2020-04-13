@@ -21,8 +21,8 @@
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">today</i>
-                <input id="date_read" name="date_read" type="text" class="datepicker" required>
-                <label for="icon_prefix">Date Read</label>
+                <input type="text" class="datepicker" id="date_read" name="date_read" required>
+                <label for="date_read">Date Read</label>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">person</i>
@@ -32,6 +32,7 @@
         </div>
         <div class="row">
             <div class="input-field col s6">
+                <i class="material-icons prefix">collections_bookmark</i>
                 <select>
                     <option value="" disabled selected>What genre is it?</option>
                     <option value="1">Contemporary</option>
@@ -60,7 +61,7 @@
             </div>
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light" id="addbutton" type="submit" name="action">Add Review
+            <button class="btn waves-effect waves-light" id="addbutton" type="submit">Add Review
                 <i class="material-icons right">book</i>
             </button>
         </div>
