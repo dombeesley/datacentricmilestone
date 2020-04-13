@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
@@ -25,6 +26,12 @@ def addbook():
 @app.route('/library')
 def see_library():
     return render_template('library.html', library=mongo.db.library.find())
+
+
+@app.route('/view_book/<book_id>')
+def view_book(book_id):
+    the_book = mongo.db.library.find_one({"_id": ObjectId(book_id)})
+    return render_template('viewbook.html', book=the_book)
 
 
 if __name__ == '__main__':
