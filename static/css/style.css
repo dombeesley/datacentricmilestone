@@ -7,6 +7,11 @@ body {
     margin-left:15px;
 }
 
+/* Footer */
+.socialicon {
+    font-size: 25px;
+}
+
 /* Add Book page */
 #reviewform{
     background: white;
