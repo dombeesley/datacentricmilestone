@@ -57,7 +57,7 @@ def register():
             session['username'] = request.form['username']
             return redirect(url_for('home'))
         
-        return 'Sorry - someone else has that name. Try another!'
+        return render_template('tryagain.html')
 
     return render_template('register.html')
 

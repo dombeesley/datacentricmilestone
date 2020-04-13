@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class="sorrycontainer">
+    <div class="sorrytext">
+        <h1>Sorry!</h1>
+
+        <div>
+            Unfortunately for you, someone else already has that name. Try another!
+        </div>
+        <div>
+            Then again, if you already have an account, you can click on log in instead.
+        </div>
+
+        <div class="row">
+            <a class="waves-effect waves-light btn" href="{{url_for('login')}}"><i class="material-icons right">beenhere</i>Log In</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('register')}}"><i class="material-icons right">create</i>Sign Up</a>
+        </div>
+
+    </div>     
+</div>
+
+
+
+{% endblock %}
