@@ -5,25 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    <title>Document</title>
+    <title>Book Reviews</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('home')}}">Home</a></li>
-                    <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
-                    <li><a href="{{url_for('library')}}">Library</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{{url_for('home')}}">Home</a></li>
-                    <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
-                    <li><a href="{{url_for('library')}}">Library</a></li>
-                </ul>
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
+                <li><a href="{{url_for('see_library')}}">Library</a></li>
+            </ul>
             </div>
         </nav>
     </header>
@@ -34,12 +29,13 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('select').material_select();
+        $(document).ready(function(){
+            $('.carousel').carousel();
             $('.collapsible').collapsible();
+            $('select').formselect();
         });
     </script>
 
@@ -51,18 +47,18 @@
                 <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Social Media</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com" target="_blank">Instagram</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2020 Copyright Dominic Beesley
             </div>
           </div>
         </footer>

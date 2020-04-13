@@ -3,28 +3,54 @@
 {% block content %}
 <h1>THE LIBRARY</h1>
 
+<div class="carousel">
+{% for book in library %}
+    <a class="carousel-item" href="www.facebook.com"> <img src="{{book.image}}"></a>
+{% endfor %}
+  </div>
+
+
+<!--
 <div class="row">
-    <ul class="collapsible">
+    <ul class="collapsible expandable">
         {% for book in library %}
         <li>
             <div class="collapsible-header">
-                <div class="col s12">
+                <div class="col s9">
                     <i class="material-icons">expand_more</i>
                     <strong>{{book.title}}</strong> by <em>{{book.author}}</em>
                 </div>
+                <div>
+                    Review by <em>{{book.username}}</em>
+                </div>
             </div>
             <div class="collapsible-body">
-                <div class="col s3">
-                    <img src="{{book.image}}">
+                <div class="cols12">
+                    <div class="col s3">
+                        <div>
+                            <img src="{{book.image}}">
+                        </div>
+                    </div>
+                    <div class="col s9"> 
+                        <div>
+                            {{book.book_review}} 
+                        </div>
+                    </div>
                 </div>
-                <div class="col s9"> 
-                    {{book.book_review}} 
+                <div class="cols12">
+                    <div>
+                        {{book.date_read}}
+                    </div>  
+                </div>
+                <div class="cols12">
+                    <div>
+                        {{book.genre}}
+                    </div>  
                 </div>
             </div>
         </li>
-        {% endfor %}
-
+        {% endfor %} 
     </ul>
-</div>
+</div> -->
 
 {% endblock %}

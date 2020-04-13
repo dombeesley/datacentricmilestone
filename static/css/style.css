@@ -15,3 +15,12 @@ h1 {
 #addbutton {
     margin-left:10px;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    margin-bottom: 25px;
+}

@@ -6,11 +6,10 @@ app = Flask(__name__)
 
 
 app.config["MONGO_DBNAME"] = 'data_centric_books'
-app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@myfirstcluster-mtbzq.mongodb.net/test?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@myfirstcluster-mtbzq.mongodb.net/data_centric_books?retryWrites=true&w=majority'
 
 
 mongo = PyMongo(app)
-
 
 
 @app.route('/')
@@ -24,8 +23,8 @@ def addbook():
 
 
 @app.route('/library')
-def library():
-    return render_template('library.html')
+def see_library():
+    return render_template('library.html', library=mongo.db.library.find())
 
 
 if __name__ == '__main__':
