@@ -5,24 +5,25 @@
 <h4>To add your review to the library, just fill in the form below...</h4>
 
 <div class="row">
-    <form class="col s12" id="reviewform">
+    <form action="{{ url_for('insert_book') }}" method="POST" class="col s12" id="reviewform">
         <div class="row">
             <div class="input-field col s6">
-                <input id="title" type="text" class="validate">
+                <input id="title" name="title" type="text" class="validate">
                 <label for="title">Title</label>
             </div>
             <div class="input-field col s6">
-                <input id="author" type="text" class="validate">
+                <input id="author" name="author" type="text" class="validate">
                 <label for="author">Author</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s6">
-                <input id="date_read" type="text" class="validate">
-                <label for="date_read">Date Read</label>
+                <i class="material-icons prefix">today</i>
+                <input id="date_read" name="date_read" type="text" class="datepicker">
+                <label for="icon_prefix">Date Read</label>
             </div>
             <div class="input-field col s6">
-                <input id="username" type="text" class="validate">
+                <input id="username" name="username" type="text" class="validate">
                 <label for="username">Username</label>
             </div>
         </div>
@@ -42,13 +43,13 @@
                 <label>Genre</label>
             </div>
             <div class="input-field col s6">
-                <input id="image" type="text" class="validate">
+                <input id="image" name="image" type="text" class="validate">
                 <label for="image">URL of Cover Image</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <textarea id="book_review" type="text" class="materialize-textarea" placeholder="Write your review here..."></textarea>
+                <textarea id="book_review" name="book_review" type="text" class="materialize-textarea" placeholder="Write your review here..."></textarea>
                 <label for="book_review">Book Review</label>
                 <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>

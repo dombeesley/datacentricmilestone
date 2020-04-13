@@ -23,6 +23,13 @@ def addbook():
     return render_template('addbook.html')
 
 
+@app.route('/insert_book', methods=['POST'])
+def insert_book():
+    library = mongo.db.library
+    library.insert_one(request.form.to_dict())
+    return redirect(url_for('see_library'))
+
+
 @app.route('/library')
 def see_library():
     return render_template('library.html', library=mongo.db.library.find())
