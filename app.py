@@ -75,6 +75,11 @@ def register():
     return render_template('register.html')
 
 
+@app.route('/editreview')
+def edit_review():
+    return render_template('editreview.html')
+
+
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
     app.run(host=os.environ.get('IP', '0.0.0.0'),
