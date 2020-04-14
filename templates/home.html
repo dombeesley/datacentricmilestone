@@ -2,13 +2,21 @@
 
 {% block content %}
 
-<h2> Welcome to the Home Page!</h2>
-<h3>Read on to find out more...</h3>
-
-<div class="row">
-    <a class="waves-effect waves-light btn" href="{{url_for('loginpage')}}"><i class="material-icons right">beenhere</i>Log In</a>
-    <a class="waves-effect waves-light btn" href="{{url_for('register')}}"><i class="material-icons right">create</i>Sign Up</a>
+<div class="librarycontainer">
+    <div class="librarytext">
+        <h2> Welcome to 'The Library'</h2>
+        <h3>Read on to find out more...</h3>
+        <div>
+            To start adding your own books to the collection, simply sign up (or log in, if you've been here before), and start adding away.
+        </div>
+        <div class="row">
+            <a class="waves-effect waves-light btn homebutton" href="{{url_for('loginpage')}}"><i class="material-icons right">beenhere</i>Log In</a>
+            <a class="waves-effect waves-light btn homebutton" href="{{url_for('register')}}"><i class="material-icons right">create</i>Sign Up</a>
+        </div>
+    </div>
 </div>
+
+
 
 
 
