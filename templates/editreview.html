@@ -55,23 +55,17 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">edit</i>
-                <textarea value="{{book.book_review}}" id="book_review" name="book_review" type="text" class="materialize-textarea" required></textarea>
+                <input value="{{book.book_review}}" id="book_review" name="book_review" type="text" class="validate" required>
                 <label for="book_review">Book Review</label>
             </div>
         </div>
         <div class="row">
             <button class="btn waves-effect waves-light" id="addbutton" type="submit">
-                Add Review
+                Update Your Review
                 <i class="material-icons right">book</i>
             </button>
         </div>
     </form>
 </div>
-
-<script>
-    $('#textarea1').text(someverylongstring)
-</script>
-        
-
 
 {% endblock %}
