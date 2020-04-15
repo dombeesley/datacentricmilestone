@@ -41,6 +41,28 @@ def view_book(book_id):
     return render_template('viewbook.html', book=the_book)
 
 
+@app.route('/editreview/<book_id>')
+def edit_review(book_id):
+    the_book = mongo.db.library.find_one({"_id": ObjectId(book_id)})
+    return render_template('editreview.html', book=the_book)
+
+
+@app.route('/update_review/<book_id>', methods=["POST"])
+def update_review(book_id):
+    library = mongo.db.library
+    library.update({'_id': ObjectId(book_id)},
+    {
+        'title': request.form.get('task_name'),
+        'author': request.form.get('task_description'),
+        'date_read': request.form.get('due_date'),
+        'username': request.form.get('is_urgent'),
+        'genre': request.form.get('is_urgent'),
+        'image': request.form.get('is_urgent'),
+        'book_review': request.form.get('is_urgent')
+    })
+    return redirect(url_for('get_tasks'))
+
+
 @app.route('/contemp')
 def contemp():
     return render_template('genre/contemp.html', library=mongo.db.library.find())
@@ -118,11 +140,6 @@ def register():
 @app.route('/logout')
 def log_out():
     return render_template('logout.html')
-
-
-@app.route('/editreview')
-def edit_review():
-    return render_template('editreview.html')
 
 
 if __name__ == '__main__':

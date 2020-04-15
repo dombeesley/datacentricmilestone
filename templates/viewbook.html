@@ -16,7 +16,7 @@
         {% if session['username'] == book.username %}
             <li class="collection-item">
                 <div>
-                    <a class="waves-effect waves-light btn" href="{{url_for('edit_review')}}">
+                    <a class="waves-effect waves-light btn" href="{{url_for('edit_review', book_id=book._id)}}">
                         <i class="material-icons right">edit</i>
                         Edit Your Review
                     </a>
