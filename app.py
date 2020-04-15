@@ -75,6 +75,11 @@ def register():
     return render_template('register.html')
 
 
+@app.route('/logout')
+def log_out():
+    return render_template('logout.html')
+
+
 @app.route('/editreview')
 def edit_review():
     return render_template('editreview.html')
