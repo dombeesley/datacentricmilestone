@@ -73,7 +73,15 @@
         $(document).ready(function() {
             $('.carousel').carousel();
             $('select').formSelect();
-            $('.datepicker').datepicker();
+            $('.datepicker').datepicker({
+                selectMonths: true, 
+                selectYears: 5, 
+                today: 'Today',
+                clear: 'Clear',
+                close: 'Ok',
+                closeOnSelect: false,
+                format: 'dd mm, yyyy'
+            });
             $('.sidenav').sidenav();
             $('#genreselect').on('change', function() {
                 $('#genre').val($('#genreselect').val());

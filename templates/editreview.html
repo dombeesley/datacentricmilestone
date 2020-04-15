@@ -9,24 +9,24 @@
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">note</i>
-                <input id="title" name="title" type="text" class="validate" required>
+                <input value="{{book.title}}" id="title" name="title" type="text" class="validate" required>
                 <label for="title">Title</label>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">face</i>
-                <input id="author" name="author" type="text" class="validate" required>
+                <input value="{{book.author}}" id="author" name="author" type="text" class="validate" required>
                 <label for="author">Author</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">today</i>
-                <input type="text" class="datepicker" id="date_read" name="date_read" required>
+                <input value="{{book.date_read}}" type="text" class="datepicker" id="date_read" name="date_read" required>
                 <label for="date_read">Date Read</label>
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">person</i>
-                <input id="username" name="username" type="text" class="validate" required>
+                <input value="{{book.username}}" id="username" name="username" type="text" class="validate" required>
                 <label for="username">Username</label>
             </div>
         </div>
@@ -48,16 +48,15 @@
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">photo</i>
-                <input id="image" name="image" type="text" class="validate" required>
+                <input value="{{book.image}}" id="image" name="image" type="text" class="validate" required>
                 <label for="image">URL of Cover Image</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">edit</i>
-                <textarea id="book_review" name="book_review" type="text" class="materialize-textarea" placeholder="Write your review here..." required></textarea>
+                <textarea value="{{book.book_review}}" id="book_review" name="book_review" type="text" class="materialize-textarea" required></textarea>
                 <label for="book_review">Book Review</label>
-                <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
         </div>
         <div class="row">
@@ -68,6 +67,11 @@
         </div>
     </form>
 </div>
+
+<script>
+    $('#textarea1').text(someverylongstring)
+</script>
         
+
 
 {% endblock %}
