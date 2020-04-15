@@ -70,7 +70,7 @@ def register():
             session['username'] = request.form['username']
             return redirect(url_for('home'))
 
-        return render_template('tryagain.html')
+        return render_template('sorry.html')
 
     return render_template('register.html')
 
