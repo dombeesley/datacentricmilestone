@@ -43,7 +43,7 @@ def view_book(book_id):
 
 @app.route('/fantasy')
 def fantasy():
-    return render_template('genre/fantasy.html')
+    return render_template('genre/fantasy.html', library=mongo.db.library.find())
 
 
 @app.route('/loginpage')
