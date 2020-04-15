@@ -41,6 +41,11 @@ def view_book(book_id):
     return render_template('viewbook.html', book=the_book)
 
 
+@app.route('/fantasy')
+def fantasy():
+    return render_template('genre/fantasy.html')
+
+
 @app.route('/loginpage')
 def loginpage():
     return render_template('login.html')
