@@ -52,15 +52,15 @@ def update_review(book_id):
     library = mongo.db.library
     library.update({'_id': ObjectId(book_id)},
     {
-        'title': request.form.get('task_name'),
-        'author': request.form.get('task_description'),
-        'date_read': request.form.get('due_date'),
-        'username': request.form.get('is_urgent'),
-        'genre': request.form.get('is_urgent'),
-        'image': request.form.get('is_urgent'),
-        'book_review': request.form.get('is_urgent')
+        'title': request.form.get('title'),
+        'author': request.form.get('author'),
+        'date_read': request.form.get('date_read'),
+        'username': request.form.get('username'),
+        'genre': request.form.get('genre'),
+        'image': request.form.get('image'),
+        'book_review': request.form.get('book_review')
     })
-    return redirect(url_for('get_tasks'))
+    return redirect(url_for('see_library'))
 
 
 @app.route('/contemp')
