@@ -1,0 +1,42 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="librarycontainer">
+    <div class="librarytext">
+        <h1><u>THE LIBRARY</u></h1>
+        <div>To find out more about each book, just click on it,</div>
+        <div>or keep scrolling through until you see one you like.</div>
+        <div>
+            <a class="waves-effect waves-light btn" href="{{url_for('see_library')}}">See All</a>
+        </div>
+        <div>
+            <a class="waves-effect waves-light btn" href="{{url_for('contemp')}}">Contemporary</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('crime')}}">Crime</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('fantasy')}}">Fantasy</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('historical')}}">Historical</a>
+        </div>
+        <div> 
+            <a class="waves-effect waves-light btn" href="{{url_for('horror')}}">Horror</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('romance')}}">Romance</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('scifi')}}">Science Fiction</a>
+            <a class="waves-effect waves-light btn" href="{{url_for('thriller')}}">Thriller</a>
+        </div>
+        
+    </div>
+</div>
+
+{% for book in library %}
+{% if book.genre == "Crime" %}
+<div class="carousel">
+    <a class="carousel-item z-depth-5" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>     
+</div>
+{% endif %}
+{% endfor %}
+
+<div class="genrecontainer">
+    <div class="genretext">
+        If there aren't any reviews for this genre yet, why don't you add one?
+    </div>
+</div>
+
+{% endblock %}

@@ -38,6 +38,19 @@ h1 {
     margin-left:10px;
 }
 
+/* Genre pages */
+.genrecontainer{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:50px;
+}
+
+.genretext{
+    display: inline-block;
+    font-size: 26px;
+}
+
+
 /* Library Page */
 .librarycontainer{
     text-align: center;
@@ -49,7 +62,7 @@ h1 {
 }
 
 .carousel {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 img {

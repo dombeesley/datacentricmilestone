@@ -41,9 +41,44 @@ def view_book(book_id):
     return render_template('viewbook.html', book=the_book)
 
 
+@app.route('/contemp')
+def contemp():
+    return render_template('genre/contemp.html', library=mongo.db.library.find())
+
+
+@app.route('/crime')
+def crime():
+    return render_template('genre/crime.html', library=mongo.db.library.find())
+
+
 @app.route('/fantasy')
 def fantasy():
     return render_template('genre/fantasy.html', library=mongo.db.library.find())
+
+
+@app.route('/historical')
+def historical():
+    return render_template('genre/historical.html', library=mongo.db.library.find())
+
+
+@app.route('/horror')
+def horror():
+    return render_template('genre/horror.html', library=mongo.db.library.find())
+
+
+@app.route('/romance')
+def romance():
+    return render_template('genre/romance.html', library=mongo.db.library.find())
+
+
+@app.route('/scifi')
+def scifi():
+    return render_template('genre/scifi.html', library=mongo.db.library.find())
+
+
+@app.route('/thriller')
+def thriller():
+    return render_template('genre/thriller.html', library=mongo.db.library.find())
 
 
 @app.route('/loginpage')
