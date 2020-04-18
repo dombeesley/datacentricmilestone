@@ -104,3 +104,8 @@ img {
     display: inline-block;
     font-size: 33px;
 }
+
+/* View book review */
+.review_card{
+    margin-top: 50px;
+}

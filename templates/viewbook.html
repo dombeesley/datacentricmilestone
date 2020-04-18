@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<ul class="collection">
+<ul class="collection review_card">
         <li class="collection-item avatar">
             <img src="{{book.image}}" alt="Picture of book cover" class="circle cover_icon responsive-img">
             <span>
@@ -11,8 +11,8 @@
         </li>
         <li class="collection-item"><div><u>Genre:</u> {{book.genre}}</div></li>
         <li class="collection-item"><div><u>Review added on:</u> {{book.date_read}}</div></li>
-        <li class="collection-item"><div>{{book.book_review}}</div></li>
-        <li class="collection-item"><div>Review by <em>{{book.username}}</em></div></li>
+        <li class="collection-item"><div><u>Book Review:</u> {{book.book_review}}</div></li>
+        <li class="collection-item"><div><u>Review by:</u> <em>{{book.username}}</em></div></li>
         {% if session['username'] == book.username %}
             <li class="collection-item">
                 <div>
