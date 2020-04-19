@@ -27,6 +27,23 @@ main {
     margin-top: 40px;
 }
 
+.hometitle{
+    color: white;
+    background-image: url('https://images.pexels.com/photos/442420/books-shelves-architecture-wood-442420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+    padding-top:50px;
+    padding-bottom:50px;  
+    margin-bottom:15px;
+    margin-top: 15px;
+    height:100%;
+    width:100%;
+    opacity: 0.5;
+}
+
+
 /* Footer */
 .socialicon {
     font-size: 25px;
