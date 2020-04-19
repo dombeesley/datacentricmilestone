@@ -1,6 +1,5 @@
 /* Base HTML */
 body {
-    background-color: beige;
     color: black;
     display: flex;
     min-height: 100vh;
@@ -8,8 +7,16 @@ body {
 }
 
 main {
+    background-color: beige;
     flex: 1 0 auto;
+    overflow: hidden;
   }
+
+.maincontent{
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
 
 .site_title {
     margin-left:15px;
