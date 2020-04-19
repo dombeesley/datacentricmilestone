@@ -12,6 +12,25 @@
 </head>
 <body>
     <header>
+        <ul id="dropdown1" class="dropdown-content red lighten-4">
+            <li><a href="{{url_for('see_library')}}">All Books</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('contemp')}}">Contemporary</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('crime')}}">Crime</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('fantasy')}}">Fantasy</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('historical')}}">Historical</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('horror')}}">Horror</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('romance')}}">Romance</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('scifi')}}">Science Fiction</a></li>
+            <li class="divider"></li>
+            <li><a href="{{url_for('thriller')}}">Thriller</a></li>
+        </ul>
         <nav>
             <div class="nav-wrapper">
                 <a href="{{url_for('home')}}" class="brand-logo site_title">The Library</a>
@@ -19,7 +38,7 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="{{url_for('home')}}">Home</a></li>
                     <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
-                    <li><a href="{{url_for('see_library')}}">Library</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">The Library <i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a href="{{url_for('log_out')}}">Log Out</a></li>
                 </ul>
                 
@@ -71,6 +90,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
             $('.carousel').carousel();
             $('select').formSelect();
             $('.datepicker').datepicker({
