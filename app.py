@@ -12,41 +12,41 @@ app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@myfirstcluster-mtbzq.mong
 
 mongo = PyMongo(app)
 
-
+# View home page
 @app.route('/')
 def home():
     return render_template('home.html')
 
-
+# Page to add a book
 @app.route('/addbook')
 def addbook():
     return render_template('addbook.html')
 
-
+# Adding a book to the database
 @app.route('/insert_book', methods=['POST'])
 def insert_book():
     library = mongo.db.library
     library.insert_one(request.form.to_dict())
     return redirect(url_for('see_library'))
 
-
+# View all books in the database
 @app.route('/library')
 def see_library():
     return render_template('library.html', library=mongo.db.library.find())
 
-
+# Viewing a book's information
 @app.route('/view_book/<book_id>')
 def view_book(book_id):
     the_book = mongo.db.library.find_one({"_id": ObjectId(book_id)})
     return render_template('viewbook.html', book=the_book)
 
-
+# Page for user to edit review
 @app.route('/editreview/<book_id>')
 def edit_review(book_id):
     the_book = mongo.db.library.find_one({"_id": ObjectId(book_id)})
     return render_template('editreview.html', book=the_book)
 
-
+# Updating review in database
 @app.route('/update_review/<book_id>', methods=["POST"])
 def update_review(book_id):
     library = mongo.db.library
@@ -62,7 +62,13 @@ def update_review(book_id):
     })
     return redirect(url_for('see_library'))
 
+# Deleting book's entry from database
+@app.route('/delete_review/<book_id>')
+def delete_review(book_id):
+    mongo.db.library.remove({'_id': ObjectId(book_id)})
+    return redirect(url_for('see_library'))
 
+# Pages for different genres
 @app.route('/contemp')
 def contemp():
     return render_template('genre/contemp.html', library=mongo.db.library.find())
@@ -102,7 +108,7 @@ def scifi():
 def thriller():
     return render_template('genre/thriller.html', library=mongo.db.library.find())
 
-
+# Logging in
 @app.route('/loginpage')
 def loginpage():
     return render_template('login.html')
@@ -120,7 +126,7 @@ def login():
 
     return render_template('tryagain.html')
 
-
+# Registering for the site
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == 'POST':
@@ -136,7 +142,7 @@ def register():
 
     return render_template('register.html')
 
-
+# Logging out
 @app.route('/logout')
 def log_out():
     session.clear()
