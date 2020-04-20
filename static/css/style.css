@@ -30,9 +30,8 @@ main {
 .hometitle{
     color: white;
     background-image: url('../images/library.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;  
     padding-top:50px;
     padding-bottom:50px;  
