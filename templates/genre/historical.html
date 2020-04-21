@@ -25,13 +25,13 @@
     </div>
 </div>
 
-{% for book in library %}
-{% if book.genre == "Historical" %}
-<div class="carousel">
-    <a class="carousel-item z-depth-5" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>     
+<div class="books-container">
+    {% for book in library %}
+    {% if book.genre == "Historical" %}
+        <a class="books-display z-depth-5" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>     
+    {% endif %}
+    {% endfor %}
 </div>
-{% endif %}
-{% endfor %}
 
 <div class="genrecontainer">
     <div class="genretext">
