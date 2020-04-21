@@ -94,7 +94,23 @@ Datepicker -  The datepicker from [Materialize](https://materializecss.com/picke
 * I also got them to check if everything made sense and didn’t need any further explanations from me. 
 * This helped me to fix errors such as pages linking to the wrong pages, or links that led nowhere.
 * Using some of their feedback, I was also able to add explanations for the user to the website, where some parts weren’t as intuitive as I’d originally hoped they were.
-
 * Using [Am I Responsive?](http://ami.responsivedesign.is/#), I was able to view the website on different screen sizes and compare them at the same time.
 * I validated the HTML code using the [W3C Markup Validation service](https://validator.w3.org/), and no errors were found.
 * I validated the CSS code using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and no errors were found.
+
+## Deployment <hr>
+* 
+
+## Credits <hr>
+### Content
+* I used [W3C Markup Validation service](https://validator.w3.org/) to validate the HTML code.
+* I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS code.
+
+### Media
+The image of a library, which I used in the header of the website, is from [here]( https://www.pexels.com/photo/ancient-antique-architectural-design-architecture-442420/).
+
+### Social Media
+The links to the Visit Dubai social media pages in the footer are the home pages of [Facebook]( https://www.facebook.com), [Twitter]( https://twitter.com), and [Instagram]( https://www.instagram.com).
+
+### Acknowledgements
+I received inspiration and guidance for this project from my mentor, Oluwaseun Owonikoko.
