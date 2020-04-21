@@ -28,7 +28,7 @@
 <div class="books-container">
     {% for book in library|reverse %}
     {% if book.genre == "Fantasy" %}
-        <a class="books-display z-depth-5" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>     
+        <a class="books-display" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>     
     {% endif %}
     {% endfor %}
 </div>
