@@ -8,7 +8,7 @@ The project can be found at [http://datacentricbooks.herokuapp.com/]( http://dat
 
 ## UX <hr>
 
-![Website on different devices](assets/images/amiresponsive.png)
+![Website on different devices](static/images/responsive.png)
 
 My website, ‘Shelf Life,’  is a collection of user-submitted book reviews.
 
@@ -16,7 +16,7 @@ The goal of the website is for users to be able to find new books to read by rea
 
 The website is also interactive, in that users can post their own reviews, and afterwards, if any details on it need to be changed, they can edit and update them, or even delete their review and remove the book from the website completely.
 
-A wireframe for the website can be found [here](…).
+Before I started making the website, I made a rough wireframe of what I hoped to achieve. The wireframe, which shows outlines of the three main pages of the website can be found [here](static/images/wireframe.pdf).
 
 ### User Stories
 I have identified three main users for this site – the site owner, registered users, and non-registered (or anonymous) users.
@@ -84,6 +84,10 @@ Datepicker -  The datepicker from [Materialize](https://materializecss.com/picke
 * [Am I Responsive?](http://ami.responsivedesign.is/#) - to test responsiveness of the site.
 * [W3C Markup Validation service](https://validator.w3.org/) - to check the HTML.
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - to check the CSS.
+* [Pexels](http://www.pexels.com) – used to find an image of a library that could be used in the website’s header.
+
+### Tools
+* [Balsamiq](https://balsamiq.com/) – used to create a rough wireframe of the website so I could visualise it before I started building it.
 
 ## Testing <hr>
 * I tested the website on multiple browsers and screen sizes.
