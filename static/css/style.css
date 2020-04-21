@@ -104,7 +104,7 @@ h1 {
 img {
     width: 100%;
     height: auto;
-}
+} 
 
 /* Books pages */
 .books-container{
@@ -125,8 +125,7 @@ img {
 .books-display a img{
     height: 100%;
     width: 100%;
-    
-}
+} 
 
 @media screen and (max-width: 700px) {
  .books-container {
