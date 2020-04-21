@@ -1,35 +1,58 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Dominic Beesley’s 3rd Milestone Project
 
-Welcome dombeesley,
+The aim of this project is to build a full-stack site that allows your users to manage a common dataset about a particular domain, using all the technologies that I've learned about so far from Code Institute. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+To do this, I’ve created a website for users to register, submit book reviews, and view book reviews made by other users. 
 
-## Gitpod Reminders
+The project can be found at [http://datacentricbooks.herokuapp.com/]( http://datacentricbooks.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX <hr>
 
-`python3 -m http.server`
+![Website on different devices](assets/images/amiresponsive.png)
 
-A blue button should appear to click: *Make Public*,
+My website is a collection of user-submitted book reviews.
 
-Another blue button should appear to click: *Open Browser*.
+The goal of the website is for users to be able to find new books to read by reading book reviews, while at the same time posting their own book reviews on the website, which may help future visitors to the site. In this aim, it’s similar to websites such as Goodreads or Shelfari.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The website is also interactive, in that users can post their own reviews, and afterwards, if any details on it need to be changed, they can edit and update them, or even delete their review and remove the book from the website completely.
 
-A blue button should appear to click: *Make Public*,
+A wireframe for the website can be found [here](…).
 
-Another blue button should appear to click: *Open Browser*.
+### User Stories
+I have identified three main users for this site – the site owner, registered users, and non-registered (or anonymous) users.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+For the site owner:
+* As the site owner, I want to clearly communicate the goals of the website.
+* As the site owner, I want to attract users to the website.
+* As the site owner, I want to let users sign up and register to post reviews on the website.
+* As the site owner, I want to let users log in, if they’ve previously signed up.
+* As the site owner, I want to let users know about different books.
+* As the site owner, I want to let users sort the books and view collections of different genres.
+* As the site owner, I want to let users read reviews of these books, submitted by other users.
+* As the site owner, I want to let users write their own reviews and add them to the site.
+* As the site owner, I want to let users edit their own reviews, which they’ve already posted on the site, and update them.
+* As the site owner, I want to let users delete their review from the site if they don’t want it up there any longer.
+* As the site owner, I want to let users log out from the website when they’re done and want to leave.
 
-## Updates Since The Instructional Video
+For registered users:
+* As a user, I want to be able to visit the site.
+* As a user, I want to be able to sign up if it’s my first time visiting.
+* As a user, I want to be able to log in after I’ve signed up.
+* As a user, I want to be able to view different books.
+* As a user, want to be able to click on an individual book to view the user-submitted book review.
+* As a user, I want to be able to sort books by their genres.
+* As a user, I want to be able to add my own book review to the collection.
+* As a user, I want to be able to view my book review after it’s been added.
+* As a user, I want to be able to edit my previous book previews.
+* As a user, I want to be able to update my book reviews after they’ve been edited.
+* As a user, I want to be able to delete any of my book reviews that I don’t want to be on the site.
+* As a user, I want to be able to log out afterwards.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+For non-registered users:
+* As a non-registered user, I want to be able to visit the site.
+* As a non-registered user, I want to be able to view different books.
+* As a non-registered user, I want to be able to click on an individual book to view the user-submitted book review.
+* As a non-registered user, I want to be able to sort books by their genres.
+* As a non-registered user, I want to have the option to sign up so I can add my own reviews to the site.
+* As a non-registered user, I want to be able to log in after I’ve signed up.
+* As a non-registered user, I want to have the option to log out afterwards.
