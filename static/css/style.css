@@ -97,10 +97,6 @@ h1 {
     font-size: 26px;
 }
 
-.carousel {
-    margin-bottom: 50px;
-}
-
 img {
     width: 100%;
     height: auto;
@@ -117,7 +113,7 @@ img {
 }
 
 .books-display{
-    height:300px;
+    height:100%;
     margin-bottom: 10px;
     overflow: hidden;
 }
