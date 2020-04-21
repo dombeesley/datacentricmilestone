@@ -33,7 +33,7 @@
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">collections_bookmark</i>
-                <select id="genreselect">
+                <select id="genreselect" required>
                     <option value="" disabled selected>What genre is it?</option>
                     <option value="Contemporary">Contemporary</option>
                     <option value="Crime">Crime</option>
@@ -44,7 +44,8 @@
                     <option value="Science Fiction">Science Fiction</option>
                     <option value="Thriller">Thriller</option>
                 </select>
-                <input value="{{book.genre}}" type="hidden" name="genre" id="genre" />
+                <span class="helper-text" data-error="wrong" data-success="right">Make sure to select a genre before updating your review</span>
+                <input type="hidden" name="genre" id="genre">
             </div>
             <div class="input-field col s6">
                 <i class="material-icons prefix">photo</i>
