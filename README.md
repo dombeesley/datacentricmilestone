@@ -8,7 +8,7 @@ The project can be found at [http://datacentricbooks.herokuapp.com/]( http://dat
 
 ## UX <hr>
 
-![Website on different devices](static/images/responsive.png)
+![Website on different devices](static/images/amiresponsive.png)
 
 My website, ‘Shelf Life,’  is a collection of user-submitted book reviews.
 
@@ -39,7 +39,7 @@ For registered users:
 * As a user, I want to be able to sign up if it’s my first time visiting.
 * As a user, I want to be able to log in after I’ve signed up.
 * As a user, I want to be able to view different books.
-* As a user, want to be able to click on an individual book to view the user-submitted book review.
+* As a user, I want to be able to click on an individual book to view the user-submitted book review.
 * As a user, I want to be able to sort books by their genres.
 * As a user, I want to be able to add my own book review to the collection.
 * As a user, I want to be able to view my book review after it’s been added.
