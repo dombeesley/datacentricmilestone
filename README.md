@@ -135,15 +135,18 @@ For non-registered users:
 
 
 ## Credits <hr>
-### Content
+### Code
 * I used [W3C Markup Validation service](https://validator.w3.org/) to validate the HTML code.
 * I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS code.
 
+### Content
+* In order to set up the website's signing up and logging in functionality, I took inspiration from [this walkthrough](https://www.youtube.com/watch?v=vVx1737auSE). The code that's explained in this walkthrough can be found [here](https://github.com/PrettyPrinted/mongodb-user-login).
+
 ### Media
-The image of a library, which I used in the header of the website, is from [here]( https://www.pexels.com/photo/ancient-antique-architectural-design-architecture-442420/).
+* The image of a library, which I used in the header of the website, is from [here]( https://www.pexels.com/photo/ancient-antique-architectural-design-architecture-442420/).
 
 ### Social Media
-The links to the Visit Dubai social media pages in the footer are the home pages of [Facebook]( https://www.facebook.com), [Twitter]( https://twitter.com), and [Instagram]( https://www.instagram.com).
+* The links to the social media pages in the footer are the home pages of [Facebook]( https://www.facebook.com), [Twitter]( https://twitter.com), and [Instagram]( https://www.instagram.com).
 
 ### Acknowledgements
-I received inspiration and guidance for this project from my mentor, Oluwaseun Owonikoko.
+* I received inspiration and guidance for this project from my mentor, Oluwaseun Owonikoko.
