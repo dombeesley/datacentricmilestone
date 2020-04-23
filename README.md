@@ -59,22 +59,22 @@ For non-registered users:
 
 ## Features <hr>
 ### Existing Features
-Dropdown – The dropdown, from [Materialize](https://materializecss.com/dropdown), adds a dropdown list. I used this in the navbar, to add a list to ‘The Library.’ When the user clicks on it, they’ll see a list of all the different genres available.
+* Dropdown – The dropdown, from [Materialize](https://materializecss.com/dropdown), adds a dropdown list. I used this in the navbar, to add a list to ‘The Library.’ When the user clicks on it, they’ll see a list of all the different genres available.
 
-Carousel – The carousel from [Materialize](https://materializecss.com/carousel) is an image slider. It’s touch enabled, so users can swipe through the carousel when viewing the website on the phone screens. I used this to display the collection of books on the ‘Library’ page.
+* Collection – To display each individual book review that the users have submitted to the website, I used the collections feature from [Materialize](https://materializecss.com/collections). All the information about the book – such as title, author, genre, and so on - is dynamically filled in to the collection, and the avatar is a small image of the book cover.
 
-Select – Select, from [Materialize](https://materializecss.com/select), allows the user to select an option from a list of specified options. I used this in the form on the ‘Add A Book’ page, for users to select a genre.
+* Select – Select, from [Materialize](https://materializecss.com/select), allows the user to select an option from a list of specified options. I used this in the form on the ‘Add A Book’ page, for users to select a genre.
 
-Sidenav –  The sidenav, from [Materialize](https://materializecss.com/sidenav), is a slide out menu that shows on smaller screens. I used this to show the options on the navbar, when viewing the website on phone screens.
+* Sidenav –  The sidenav, from [Materialize](https://materializecss.com/sidenav), is a slide out menu that shows on smaller screens. I used this to show the options on the navbar, when viewing the website on phone screens.
 
-Datepicker -  The datepicker from [Materialize](https://materializecss.com/pickers) is a picker that allows users to pick a date from a calendar. I used this in the form on the ‘Add A Book’ page, for users to select the date they’d read the book.
+* Datepicker -  The datepicker from [Materialize](https://materializecss.com/pickers) is a picker that allows users to pick a date from a calendar. I used this in the form on the ‘Add A Book’ page, for users to select the date they’d read the book.
 
 ## Technologies Used <hr>
 ### Programming Languages
 * [HTML](https://www.w3schools.com/html/default.asp) – for creating the structure and layout of the website.
 * [CSS](https://www.w3.org/Style/CSS/) – for styling the website’s content.
 * [Javascript](https://www.javascript.com/) – for making some of the Materialize features work correctly.
-* [jQuery](https://jquery.com/) – for initialising some of the Materialize features and ensuring that they work correctly for the user.
+* [jQuery](https://jquery.com/) – for initialising some of the Materialize features, such as the dropdown and datepicker, and ensuring that they work correctly for the user.
 * [Markdown](https://www.markdownguide.org/) – for styling the content of this README.md.
 
 ### Websites
