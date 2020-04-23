@@ -42,7 +42,9 @@
                     <li><a href="{{url_for('home')}}">Home</a></li>
                     <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">The Library <i class="material-icons right">arrow_drop_down</i></a></li>
+                    {% if 'username' in session %}
                     <li><a href="{{url_for('log_out')}}">Log Out</a></li>
+                    {% endif %}
                 </ul>
                 
             </div>
