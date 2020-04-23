@@ -90,14 +90,19 @@ Datepicker -  The datepicker from [Materialize](https://materializecss.com/picke
 * [Balsamiq](https://balsamiq.com/) – used to create a rough wireframe of the website so I could visualise it before I started building it.
 
 ## Testing <hr>
+## Screen Sizes and Devices
 * I tested the website on multiple browsers and screen sizes.
 * I tested the website on both Google Chrome and Safari.
 * I also tested the website, on both my laptop (a MacBook Air) and my phone (an iPhone 8).
 * This helped me to ensure that the site worked as it was meant to, and check that all the and the content displayed correctly for the user. I was also able to see if the website’s content was responsive on different screen sizes, and that different pages loaded as they were meant to.
+
+## Getting Others to Test it
 * I got several friends and members of my family to test the website by signing up, logging in, and adding book reviews to the website, to ensure that everything worked as it was meant to. 
 * I also got them to check if everything made sense and didn’t need any further explanations from me. 
 * This helped me to fix errors such as pages linking to the wrong pages, or links that led nowhere.
 * Using some of their feedback, I was also able to add explanations for the user to the website, where some parts weren’t as intuitive as I’d originally hoped they were.
+
+## Using Online Tools and Websites
 * Using [Am I Responsive?](http://ami.responsivedesign.is/#), I was able to view the website on different screen sizes and compare them at the same time.
 * I validated the HTML code using the [W3C Markup Validation service](https://validator.w3.org/), and no errors were found.
 * I validated the CSS code using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and no errors were found.
