@@ -11,7 +11,9 @@
     <title>Shelf Life</title>
 </head>
 <body>
+    <!-- Navbar -->
     <header>
+    <!-- Navbar dropdown section -->
         <ul id="dropdown1" class="dropdown-content red lighten-4">
             <li><a href="{{url_for('see_library')}}">All Books</a></li>
             <li class="divider"></li>
@@ -31,6 +33,7 @@
             <li class="divider"></li>
             <li><a href="{{url_for('thriller')}}">Thriller</a></li>
         </ul>
+        <!-- Main navbar section -->
         <nav>
             <div class="nav-wrapper">
                 <a href="{{url_for('home')}}" class="brand-logo site_title">Shelf Life</a>
@@ -44,6 +47,7 @@
                 
             </div>
         </nav>
+        <!-- Navbar sidenav section -->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{url_for('home')}}">Home</a></li>
             <li><a href="{{url_for('addbook')}}">Add A Book</a></li>
@@ -51,13 +55,13 @@
             <li><a href="{{url_for('log_out')}}">Log Out</a></li>
         </ul>
     </header>
-
+    <!-- Block content -->
     <main>
         <div class="container">
             {% block content %} {% endblock %}
         </div>
     </main>
-
+    <!-- Footer -->
     <footer class="page-footer">
         <div class="footer-copyright footer-content">
             <div class="container col l6 s12">
@@ -70,6 +74,7 @@
             </div>
         </div>
     </footer>
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
@@ -77,7 +82,7 @@
             $(".dropdown-trigger").dropdown();
             $('select').formSelect();
             $('.datepicker').datepicker({
-                selectMonths: true, 
+                selectMonths: true,
                 selectYears: 5, 
                 today: 'Today',
                 clear: 'Clear',
