@@ -2,16 +2,20 @@
 
 {% block content %}
 
+<!-- Introductory text -->
 <h4>To update your review, just fill in the form below...</h4>
 
+<!-- Form to edit book review -->
 <div class="row">
     <form action="{{ url_for('update_review', book_id=book._id) }}" method="POST" class="col s12" id="reviewform">
         <div class="row">
+            <!-- Section to edit title -->
             <div class="input-field col s6">
                 <i class="material-icons prefix">note</i>
                 <input value="{{book.title}}" id="title" name="title" type="text" class="validate" required>
                 <label for="title">Title</label>
             </div>
+            <!-- Section to edit author's name -->
             <div class="input-field col s6">
                 <i class="material-icons prefix">face</i>
                 <input value="{{book.author}}" id="author" name="author" type="text" class="validate" required>
@@ -19,11 +23,13 @@
             </div>
         </div>
         <div class="row">
+            <!-- Section to change date -->
             <div class="input-field col s6">
                 <i class="material-icons prefix">today</i>
                 <input value="{{book.date_read}}" type="text" class="datepicker" id="date_read" name="date_read" required>
-                <label for="date_read">Date Read</label>
+                <label for="date_read">Date Review Was Added</label>
             </div>
+            <!-- Section for user's username -->
             <div class="input-field col s6">
                 <i class="material-icons prefix">person</i>
                 <input value="{{book.username}}" id="username" name="username" type="text" class="validate" required>
@@ -31,6 +37,7 @@
             </div>
         </div>
         <div class="row">
+        <!-- Section to select genre -->
             <div class="input-field col s6">
                 <i class="material-icons prefix">collections_bookmark</i>
                 <select id="genreselect" required>
@@ -48,12 +55,14 @@
                 <input type="hidden" name="genre" id="genre">
             </div>
             <div class="input-field col s6">
+                <!-- Section to add link to cover image -->
                 <i class="material-icons prefix">photo</i>
                 <input value="{{book.image}}" id="image" name="image" type="text" class="validate" required>
                 <label for="image">URL of Cover Image</label>
             </div>
         </div>
         <div class="row">
+            <!-- Section to edit book review -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">edit</i>
                 <input value="{{book.book_review}}" id="book_review" name="book_review" type="text" class="validate" required>
@@ -61,6 +70,7 @@
             </div>
         </div>
         <div class="row">
+            <!-- Button to update book review -->
             <button class="btn waves-effect waves-light" id="addbutton" type="submit">
                 Update Your Review
                 <i class="material-icons right">book</i>

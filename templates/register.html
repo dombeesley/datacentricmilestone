@@ -3,6 +3,7 @@
 {% block content %}
 
 <div class="logincontainer">
+    <!-- Introductory text -->
     <div class="logintext">
         <h1><u>Sign Up Here</u></h1>
 
@@ -12,20 +13,24 @@
     </div>
 </div>
 
+<!-- Form to register -->
 <div class="row">
     <form class="col s12 registerform" method="POST" action="{{ url_for('register') }}">
+        <!-- Section to add username -->
         <div class="row">
             <div class="input-field col s12">
             <input id="username" type="text" name="username" class="validate">
             <label for="username">Username</label>
             </div>
         </div>
+        <!-- Section to add password -->
         <div class="row">
             <div class="input-field col s12">
             <input id="password" type="password" name = "password" class="validate">
             <label for="password">Password</label>
             </div>
         </div>
+        <!-- Button to register -->
         <button type="submit" class="btn btn-primary btn-block formbutton">
             <i class="material-icons right">create</i>
             Sign Up

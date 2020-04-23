@@ -3,12 +3,14 @@
 {% block content %}
 <div class="librarycontainer">
     <div class="librarytext">
+        <!-- Introductory text -->
         <h1><u>THE LIBRARY</u></h1>
         <div>To find out more about each book, just click on it.</div>
         <div>Or keep scrolling down until you see one you like.</div>
         <div>
             <a class="waves-effect waves-light btn" href="{{url_for('see_library')}}">See All</a>
         </div>
+        <!-- Buttons to sort by genre -->
         <div>
             <a class="waves-effect waves-light btn" href="{{url_for('contemp')}}">Contemporary</a>
             <a class="waves-effect waves-light btn" href="{{url_for('crime')}}">Crime</a>
@@ -25,6 +27,7 @@
     </div>
 </div>
 
+<!-- Section to display books -->
 <div class="books-container">
 {% for book in library|reverse %}
     <a class="books-display" href="{{url_for('view_book', book_id=book._id)}}"> <img src="{{book.image}}"></a>

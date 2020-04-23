@@ -3,6 +3,7 @@
 {% block content %}
 
 <div class="sorrycontainer">
+    <!-- Text -->
     <div class="sorrytext">
         <h1>Sorry!</h1>
 
@@ -17,7 +18,9 @@
         </div>
 
         <div class="row">
+            <!-- Button to log in -->
             <a class="waves-effect waves-light btn" href="{{url_for('loginpage')}}"><i class="material-icons right">beenhere</i>Log In</a>
+            <!-- Button to register -->
             <a class="waves-effect waves-light btn" href="{{url_for('register')}}"><i class="material-icons right">create</i>Sign Up</a>
         </div>
 

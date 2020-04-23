@@ -3,10 +3,10 @@
 {% block content %}
 
 <div class="sorrycontainer">
+    <!-- Introductory text -->
     <div class="sorrytext">
         <h1>Sorry!</h1>
 
-    
         <div>
             Unfortunately, someone else already has that name. Click sign up to try another one!
         </div>
@@ -15,7 +15,9 @@
         </div>
 
         <div class="row">
+            <!-- Button to log in -->
             <a class="waves-effect waves-light btn" href="{{url_for('loginpage')}}"><i class="material-icons right">beenhere</i>Log In</a>
+            <!-- Button to register -->
             <a class="waves-effect waves-light btn" href="{{url_for('register')}}"><i class="material-icons right">create</i>Sign Up</a>
         </div>
 

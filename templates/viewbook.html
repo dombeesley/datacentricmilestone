@@ -2,24 +2,34 @@
 
 {% block content %}
 
+<!-- Section to display book's information -->
 <ul class="collection review_card">
+        <!-- Image of book cover -->
         <li class="collection-item avatar">
             <img src="{{book.image}}" alt="Picture of book cover" class="circle cover_icon responsive-img bookcovericon">
+            <!-- Book title and author -->
             <span class="title">
                 <h4><strong>{{book.title}}</strong> by <em>{{book.author}}</em></h4>
             </span>
         </li>
+        <!-- Book genre -->
         <li class="collection-item"><div><u>Genre:</u> {{book.genre}}</div></li>
+        <!-- Date added -->
         <li class="collection-item"><div><u>Review added on:</u> {{book.date_read}}</div></li>
+        <!-- Book review -->
         <li class="collection-item"><div><u>Book Review:</u> {{book.book_review}}</div></li>
+        <!-- User's username -->
         <li class="collection-item"><div><u>Review by:</u> <em>{{book.username}}</em></div></li>
+        <!-- Displays options to edit or delete if user wrote review -->
         {% if session['username'] == book.username %}
             <li class="collection-item">
                 <div>
+                    <!-- Button to edit review -->
                     <a class="waves-effect waves-light btn" href="{{url_for('edit_review', book_id=book._id)}}">
                         <i class="material-icons right">edit</i>
                         Edit Your Review
                     </a>
+                    <!-- Button to delete review -->
                     <a class="waves-effect waves-light btn" href="{{url_for('delete_review', book_id=book._id)}}">
                         <i class="material-icons right">delete</i>
                         Delete Your Review
