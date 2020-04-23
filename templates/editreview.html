@@ -36,9 +36,12 @@
                 <label for="username">Username</label>
             </div>
         </div>
-        <div class="row">
         <!-- Section to select genre -->
-            <div class="input-field col s6">
+        <div class="row">
+            <div class="image-instructions">
+                Make sure to select a genre before updating your review:
+            </div>
+            <div class="input-field col s12">
                 <i class="material-icons prefix">collections_bookmark</i>
                 <select id="genreselect" required>
                     <option value="" disabled selected>What genre is it?</option>
@@ -51,10 +54,14 @@
                     <option value="Science Fiction">Science Fiction</option>
                     <option value="Thriller">Thriller</option>
                 </select>
-                <span class="helper-text" data-error="wrong" data-success="right">Make sure to select a genre before updating your review</span>
-                <input type="hidden" name="genre" id="genre">
+                <input type="hidden" name="genre" id="genre" required>
             </div>
-            <div class="input-field col s6">
+        </div>
+        <div class="row">
+            <div class="image-instructions">
+                Search for the cover image, right-click on it, select 'Copy Image Address,' and paste the URL below. If you're on your phone, find the image, open it in a new tab, and then copy the URL from the top of your screen.
+            </div>
+            <div class="input-field col s12">
                 <!-- Section to add link to cover image -->
                 <i class="material-icons prefix">photo</i>
                 <input value="{{book.image}}" id="image" name="image" type="text" class="validate" required>
