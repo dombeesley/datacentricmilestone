@@ -68,42 +68,49 @@ def delete_review(book_id):
     mongo.db.library.remove({'_id': ObjectId(book_id)})
     return redirect(url_for('see_library'))
 
-# Pages for different genres
+# Page to view books in contemporary genre
 @app.route('/contemp')
 def contemp():
     return render_template('genre/contemp.html', library=mongo.db.library.find())
 
 
+# Page to view books in crime genre
 @app.route('/crime')
 def crime():
     return render_template('genre/crime.html', library=mongo.db.library.find())
 
 
+# Page to view books in fantasy genre
 @app.route('/fantasy')
 def fantasy():
     return render_template('genre/fantasy.html', library=mongo.db.library.find())
 
 
+# Page to view books in historical genre
 @app.route('/historical')
 def historical():
     return render_template('genre/historical.html', library=mongo.db.library.find())
 
 
+# Page to view books in horror genre
 @app.route('/horror')
 def horror():
     return render_template('genre/horror.html', library=mongo.db.library.find())
 
 
+# Page to view books in romance genre
 @app.route('/romance')
 def romance():
     return render_template('genre/romance.html', library=mongo.db.library.find())
 
 
+# Page to view books in science fiction genre
 @app.route('/scifi')
 def scifi():
     return render_template('genre/scifi.html', library=mongo.db.library.find())
 
 
+# Page to view books in thriller genre
 @app.route('/thriller')
 def thriller():
     return render_template('genre/thriller.html', library=mongo.db.library.find())
