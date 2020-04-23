@@ -4,7 +4,7 @@ The aim of this project is to build a full-stack site that allows your users to 
 
 To do this, I’ve created ‘Shelf Life,’ a website for users to register, submit book reviews, and view book reviews made by other users. 
 
-The project can be found at [http://datacentricbooks.herokuapp.com/]( http://datacentricbooks.herokuapp.com/)
+The project can be found at [http://datacentricbooks.herokuapp.com/]( http://datacentricbooks.herokuapp.com/).
 
 ## UX <hr>
 
@@ -16,7 +16,7 @@ The goal of the website is for users to be able to find new books to read by rea
 
 The website is also interactive, in that users can post their own reviews, and afterwards, if any details on it need to be changed, they can edit and update them, or even delete their review and remove the book from the website completely.
 
-Before I started making the website, I made a rough wireframe of what I hoped to achieve. The wireframe, which shows outlines of the three main pages of the website can be found [here](static/images/wireframe.pdf).
+Before I started making the website, I made a rough wireframe of what I hoped to achieve. The wireframe, which shows outlines of the three main pages of the website, can be found [here](static/images/wireframe.pdf).
 
 ### User Stories
 I have identified three main users for this site – the site owner, registered users, and non-registered (or anonymous) users.
