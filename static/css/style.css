@@ -53,7 +53,8 @@ main {
 
 .footer-content{
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 10px;  
+    margin-right: 10px;
 }
 
 
@@ -110,8 +111,7 @@ img {
     grid-gap: 0.5% 1.5%;
     height:auto;
     margin-top: 30px;
-    margin-bottom:30px;
-    padding-bottom: 15px;
+    margin-bottom:50px;
 }
 
 .books-display{
