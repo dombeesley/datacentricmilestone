@@ -97,7 +97,8 @@ For non-registered users:
 * This helped me to ensure that the site worked as it was meant to, and check that all the and the content displayed correctly for the user. I was also able to see if the website’s content was responsive on different screen sizes, and that different pages loaded as they were meant to.
 
 ## Getting Others to Test it
-* I got several friends and members of my family to test the website by signing up, logging in, and adding book reviews to the website, to ensure that everything worked as it was meant to. 
+* I got several friends and members of my family to test the website by signing up and logging in to the site. 
+* I also got them to try and add book reviews to the website, and then edit and delete some of them afterwards, to ensure that everything worked as it was meant to. 
 * I also got them to check if everything made sense and didn’t need any further explanations from me. 
 * This helped me to fix errors such as pages linking to the wrong pages, or links that led nowhere.
 * Using some of their feedback, I was also able to add explanations for the user to the website, where some parts weren’t as intuitive as I’d originally hoped they were.
