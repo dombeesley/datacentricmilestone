@@ -21,7 +21,7 @@ Before I started making the website, I made a rough wireframe of what I hoped to
 ### User Stories
 I have identified three main users for this site – the site owner, registered users, and non-registered (or anonymous) users.
 
-For the site owner:
+#### For the site owner:
 * As the site owner, I want to clearly communicate the goals of the website.
 * As the site owner, I want to attract users to the website.
 * As the site owner, I want to let users sign up and register to post reviews on the website.
@@ -34,7 +34,7 @@ For the site owner:
 * As the site owner, I want to let users delete their review from the site if they don’t want it up there any longer.
 * As the site owner, I want to let users log out from the website when they’re done and want to leave.
 
-For registered users:
+#### For registered users:
 * As a user, I want to be able to visit the site.
 * As a user, I want to be able to sign up if it’s my first time visiting.
 * As a user, I want to be able to log in after I’ve signed up.
@@ -48,7 +48,7 @@ For registered users:
 * As a user, I want to be able to delete any of my book reviews that I don’t want to be on the site.
 * As a user, I want to be able to log out afterwards.
 
-For non-registered users:
+#### For non-registered users:
 * As a non-registered user, I want to be able to visit the site.
 * As a non-registered user, I want to be able to view different books.
 * As a non-registered user, I want to be able to click on an individual book to view the user-submitted book review.
