@@ -2,6 +2,7 @@
 
 {% block content %}
 <div class="librarycontainer">
+    <!-- Button to edit review -->
     <div class="librarytext">
         <h1><u>THE LIBRARY</u></h1>
         <div>To find out more about each book, just click on it,</div>
@@ -9,6 +10,7 @@
         <div>
             <a class="waves-effect waves-light btn" href="{{url_for('see_library')}}">See All</a>
         </div>
+        <!-- Buttons to sort by genre -->
         <div>
             <a class="waves-effect waves-light btn" href="{{url_for('contemp')}}">Contemporary</a>
             <a class="waves-effect waves-light btn" href="{{url_for('crime')}}">Crime</a>
@@ -25,6 +27,7 @@
     </div>
 </div>
 
+<!-- Section to display books -->
 <div class="books-container">
     {% for book in library|reverse %}
     {% if book.genre == "Horror" %}
@@ -33,6 +36,7 @@
     {% endfor %}
 </div>
 
+<!-- Link to add book review -->
 <div class="genrecontainer">
     <div class="genretext">
         If there aren't any reviews for this genre yet, why don't <a href="{{url_for('addbook')}}">you add one?</a>
