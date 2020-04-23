@@ -69,6 +69,9 @@ I have identified three main users for this site – the site owner, registered 
 
 * Datepicker -  The datepicker from [Materialize](https://materializecss.com/pickers) is a picker that allows users to pick a date from a calendar. I used this in the form on the ‘Add A Book’ page, for users to select the date they’d read the book.
 
+### Features To Implement Later
+* I’m aware that on the pages that display the books – such as the library page, or the pages for individual genres – not all of the book covers are displayed at the same size. I didn’t want to crop the images, in case an important detail such as the cover or the author’s name was cut off the image, which would make the website less useful for the potential users who were hoping to learn more information about these books. If I was to have more time to refine the website and make another version, I would consider addressing the issue, perhaps automatically resizing all of the cover images.
+
 ## Technologies Used <hr>
 ### Programming Languages
 * [HTML](https://www.w3schools.com/html/default.asp) – for creating the structure and layout of the website.
