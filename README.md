@@ -103,7 +103,31 @@ Datepicker -  The datepicker from [Materialize](https://materializecss.com/picke
 * I validated the CSS code using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and no errors were found.
 
 ## Deployment <hr>
-* 
+### Introduction
+* This website was deployed using Heroku.
+* The code for the site was written using Gitpod.
+
+### Creating the app on Heroku
+* To deploy it on Heroku, I first signed into Heroku, using the username and password, which I’d chosen when I first registered with Heroku.
+* Once signed into Heroku, I went to the Heroku dashboard.
+* I clicked on ‘New.’
+* I then clicked in ‘Create new app.’ 
+* This took me to a page where I named the app – I chose the name ‘datacentricbooks.’
+* I was also able to choose a region – for this, I chose Europe.
+* I then clicked on ‘Create app,’ which took me to the app’s dashboard, as it was now created.
+
+### Pushing to Heroku
+* On my Gitpod workspace, I logged into Heroku using the CLI, with the email and password that I’d previously used to sign in to Heroku.
+* Before I pushed the code from Gitpod to the Heroku server, I created two files – requirements.txt (which contained a list of the dependencies my site was using) and a Procfile.
+* Once those were created, I was able to push the code to Heroku using the commands ‘git add,’ ‘git commit,’ and then ‘git push heroku master.’
+
+### Deploying the website
+* On Heroku, I went to the ‘Config vars’ section and added two variables.
+* First, I set IP as 0.0.0.0.
+* I then set PORT as 5000.
+* Then, at the top of the Heroku dashboard, I clicked on ‘More,’ and then ‘Restart all dynos.’
+* I was then able to access the site using the address [http://datacentricbooks.herokuapp.com/]( http://datacentricbooks.herokuapp.com/).
+
 
 ## Credits <hr>
 ### Content
