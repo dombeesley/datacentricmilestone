@@ -22,8 +22,10 @@
         <div class="row">
             <!-- Button to log in -->
             <a class="waves-effect waves-light btn-large homebutton" href="{{url_for('loginpage')}}"><i class="material-icons right">beenhere</i>Log In</a>
+            {% if 'username' not in session %}
             <!-- Button to register -->
             <a class="waves-effect waves-light btn-large homebutton" href="{{url_for('register')}}"><i class="material-icons right">create</i>Sign Up</a>
+            {% endif %}
         </div>
     </div>
 </div>
