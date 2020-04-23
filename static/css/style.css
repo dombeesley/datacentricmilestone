@@ -75,18 +75,6 @@ h1 {
     margin-left:10px;
 }
 
-/* Genre pages */
-.genrecontainer{
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top:50px;
-}
-
-.genretext{
-    display: inline-block;
-    font-size: 26px;
-}
-
 /* Library Page */
 .librarycontainer{
     text-align: center;
@@ -103,6 +91,17 @@ img {
 } 
 
 /* Books pages */
+.genrecontainer{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:50px;
+}
+
+.genretext{
+    display: inline-block;
+    font-size: 26px;
+}
+
 .books-container{
     display: grid;
     grid-template-columns: 31% 31% 31%;
