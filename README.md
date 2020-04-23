@@ -87,7 +87,7 @@ For non-registered users:
 * [Pexels](http://www.pexels.com) – used to find an image of a library that could be used in the website’s header.
 
 ### Tools
-* [Balsamiq](https://balsamiq.com/) – used to create a rough wireframe of the website so I could visualise it before I started building it.
+* [Balsamiq](https://balsamiq.com/) – used to create a rough wireframe of the website, so I could visualise it before I started building it.
 
 ## Testing <hr>
 ## Screen Sizes and Devices
