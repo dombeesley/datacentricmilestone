@@ -57,7 +57,6 @@ main {
     margin-right: 10px;
 }
 
-
 /* Add Book page */
 #reviewform{
     background: white;
@@ -117,6 +116,7 @@ img {
 .books-display{
     height:100%;
     margin-bottom: 10px;
+    padding-bottom:25px;
     overflow: hidden;
 }
 
